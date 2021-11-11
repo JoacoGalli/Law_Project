@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <title>inicio</title>
-</head>
-<body>
-    ¡hOLA PUTOS! HOLA
-</body>
-</html>
+{% include 'header.html' %}
+<br/>
+<!-- <a href="{{url_for('create')}}" class="btn btn-success">
+
+    Ingresar
+
+</a> -->
+ESTAS ACA
+<br/>
+<br/>
+    <!-- <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for usuario in usuarios %}
+            <tr>
+                <td>{{usuario[0] }}</td>
+                <td>{{usuario[1] }}</td>
+            </tr>
+            {% endfor %} 
+        </tbody>
+    </table> -->
+{% include 'footer.html' %}
