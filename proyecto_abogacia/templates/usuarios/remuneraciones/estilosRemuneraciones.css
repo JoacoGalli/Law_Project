@@ -39,7 +39,7 @@
 }
 
 .content {
-	margin-top: 2rem;
+	margin-top: 0px;
 }
 
 [data-content] {
@@ -149,11 +149,87 @@
 }
 
 
-
-
-
-
-
 /* ESTA ES LA TABLA DEL FORMULARIO  */
 
 /*Estilos del formulario  */ 
+
+
+
+
+
+
+
+
+/*Estilo PESTAÑA REMUNERACIONES */ 
+
+#iconosRemuneraciones i{
+	font-size:15px;
+	padding:8px;
+	
+}
+
+#fechasRemuneraciones{
+	font-size:10px;
+	width:90%;
+	border: 1px solid rgb(0,0,0,.2);
+	margin-left: 10px;
+	padding:10px;
+}
+
+#fechasRemuneraciones div{
+	display: inline-block;
+	margin-right: 20px;
+	
+}
+
+#fechasRemuneraciones div label{
+	display:block;
+	background: none;
+	font-size:8px;
+}
+
+#fechasRemuneraciones div input,select{
+	text-align: center;
+	background: rgb(240,240,240,.6);
+	width:130px;
+	border: none;
+}
+
+.iconoSumarYEliminar{
+	float: right;
+	font-size:25px;
+}
+
+#encabezadoTablaRemuneracion{
+	width: 90%;
+	font-size: 9px;
+	margin: 10px;
+	border: 1px solid rgb(0,0,0,.2);
+	padding: 10px;
+	
+}
+
+#encabezadoTablaRemuneracion span,label{
+	padding-right: 15px;
+	margin-right: 100px;
+		
+}
+
+#listaRemuneracion{
+	font-size: 8px;
+	width: 90%;
+	max-width: none;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid rgb(0,0,0,.2);
+	
+}
+
+#listaRemuneracion div{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/*Estilo PESTAÑA REMUNERACIONES */ 

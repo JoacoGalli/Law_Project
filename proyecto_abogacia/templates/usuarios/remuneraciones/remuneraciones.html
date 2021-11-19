@@ -297,9 +297,118 @@
 			
 		</div>
 
-		<div data-content id="remuneraciones">
-			<h1>remuneraciones</h1>
-		</div>
+		<div data-content id="remuneraciones">      <!--Esta es la pestaña de remuneraciones-->
+			<div id="iconosRemuneraciones">
+				<i class='bx bx-right-arrow-alt'></i>
+				<i class='bx bx-left-arrow-alt' ></i>
+				<i class='bx bxs-comment-add' ></i>
+				<i class='bx bxs-checkbox-minus' ></i>
+				<i class='bx bxs-calendar' ></i>
+				<i class='bx bx-x' ></i>
+				<i class='bx bx-box' ></i>
+				<i class='bx bxs-file-txt' ></i>
+				<i class='bx bx-task-x' ></i>
+				<i class='bx bx-message-x' ></i>
+				<i class='bx bx-money' ></i>
+				<i class='bx bx-check' ></i>
+				<i class='bx bxs-magic-wand' ></i>
+				<i class='bx bx-shape-triangle'></i>
+				<i style="color:red" class='bx bx-memory-card'></i>
+				<i  style="color:blue" class='bx bx-calculator' ></i>
+				<i  style="color:lightblue" class='bx bx-radio-circle-marked' ></i>
+				<select name="seleccionMoneda" id="seleccionMoneda">
+					<option value="">dolar</option>
+					<option value="">peso argento papa</option>
+				</select>
+				<i class='bx bx-check' ></i>
+				<i style="float:right" class='bx bx-question-mark' ></i>
+				<i style="float:right" class='bx bxs-camera-movie' ></i>
+			</div>
+
+
+
+			<div id="fechasRemuneraciones">
+			
+				<div>
+				<label for="fechaDesdeRemuneraciones">Desde:</label>
+					<input type="date" id="fechaDesdeRemuneraciones" name="fechaDesde" required> <strong> <i class='bx bx-question-mark'></i> </strong>
+				</div>
+
+				<div>
+				<label for="fechaHastaRemuneraciones">Hasta:</label>
+					<input type="date" id="fechaHastaRemuneraciones" name="fechaHasta" required>	<i class='bx bx-question-mark'></i>
+				</div>
+
+				<div>
+				<label for="importeRemuneracion">Remuneración:</label>
+					<input type="number" id="importeRemuneracion" name="importeRemuneracion" required>	 <i class='bx bx-question-mark'></i>
+				</div>
+
+				<div>
+				<label for="monedaRemuneracion">Moneda</label>
+					<select name="monedaRemuneracion" id="monedaRemuneracion">
+						<option value="dolar">Dolar</option>
+						<option value="pesos">Pesos</option>
+					</select> <i class='bx bx-question-mark'></i>
+				</div>
+
+				<i class='bx bxs-trash iconoSumarYEliminar' ></i> 
+				<a href="" id="botonSumarFechas"><i class='bx bx-plus iconoSumarYEliminar'></i>  </a>
+			
+			</div> 
+
+			<div id="encabezadoTablaRemuneracion">
+				<span>Periodos ingresados: 10 años</span>   <!--ESTO ES PROVISORIO, no sabemos si el numero 10 años cambia o es fijo.-->
+				
+				<input id="eliminaTopesArt9" type="checkbox" >
+				<label for="eliminaTopesArt9">Elimina todos los topes Art.9</label>
+
+				<input id="verResolucionMaximaArt9" type="checkbox" >
+				<label for="verResolucionMaximaArt9">Ver resolución maxima Art.9</label>
+
+				<span>Suma actualizados Anses: </span>   
+
+			</div>
+
+			<div id="listaRemuneracion" class="container">
+
+
+				<div class="row">
+				  <div class="col">
+					<b>Desde</b>
+				  </div>
+				  <div class="col">
+					<b>Hasta</b>
+				  </div>
+				  <div class="col">
+					<b>Remuneracion</b>
+				  </div>
+				  <div class="col">
+					<b>Moneda</b>
+				  </div>
+				  <div class="col">
+					<b>Elimina Tope Art.9</b>
+				  </div>
+				  <div class="col">
+					<b>Dias</b>
+				  </div>
+				  <div class="col">
+					<b>Actualizados IPC (8/2021)</b>
+				  </div>
+				  <div class="col">
+					<b>Actualizados A N S E S</b>
+				  </div>
+				</div>
+
+				<hr>
+				
+
+			</div>
+
+
+
+
+		</div>   <!--Fin pestaña de remuneraciones-->
 
 		<div data-content id="aportesAutonomos">
 			<h1>aportes autonomos</h1>
@@ -320,3 +429,5 @@
 <script src="./funcionamientoRemuneraciones.js" defer></script>
 </body>
 </html>
+
+
