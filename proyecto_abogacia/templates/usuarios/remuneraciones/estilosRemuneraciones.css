@@ -1,0 +1,159 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+
+.navbar{
+	font-size: 10px;
+}
+
+.moverDerechaNavBar{
+	position: relative;
+	left: 90%;
+	margin-left: 1rem;
+}
+
+
+
+/* Estas son las caracteristicas del menu por pestañas    */
+
+.menu {
+	display: flex;
+	font-size: 10px;
+	background-color:#BAE9F3;
+}
+
+.menu p {
+	font-size: 9px;
+	margin: .4rem;
+	cursor: pointer;
+}
+
+.moverDerecha{            /* Mueve a la derecha los menus "Remuneraciones", "Aportes Autonomos" y "Notas y Comentarios" */
+	position: relative;
+	left: 10%;
+}
+
+.content {
+	margin-top: 2rem;
+}
+
+[data-content] {
+	display: none;
+}
+
+.active[data-content] {
+	display: block;
+	
+}
+
+/* Estas son las caracteristicas del menu por pestañas    */
+
+
+
+
+/*Estilos del formulario  */ 
+
+.contenedorFormulario{
+    width:100%;
+    background-color: rgba(5, 1, 1, 0.1);
+    font-size: 9px;
+    text-align: left;
+    padding: 10px;
+  
+
+}
+
+
+.contenedorFormulario label,input,select{
+    display: inline-block;
+    margin-left: 5px auto;
+    margin-bottom:10px;
+    font-size: 9px;
+	
+	
+	    
+}
+
+.contenedorFormulario form input{
+	background: rgb(255,255,255,.6);
+	margin-left: 10px;
+	border: none;
+
+	
+}
+
+.contenedorFormulario form input[type="text"]{
+	width: 200px;
+	
+}
+
+.contenedorFormulario form div input[type="radio"]{
+    margin-left:50px;
+	    
+}
+	
+
+.contenedorFormulario form div label{
+    margin-right: 10px;
+}
+
+.contenedorFormulario form div label,input[type="radio"]{
+    display: inline;
+	    
+}
+
+.contenedorFormulario form div input[type="number"]{
+    width: 50px;
+    display: inline;
+    margin: 1px;
+}
+
+
+
+
+/* ESTA ES LA TABLA DEL FORMULARIO  */
+#aportesRegimenReparto table{
+    border: 1px solid black;
+
+}
+
+#aportesRegimenReparto table td,th{
+	
+	padding: 6px;
+	border: 1px solid black;
+}
+
+#aportesRegimenReparto table input{
+	background: rgb(255,255,255,.6);
+	display: block;
+}
+
+#aportesCapitalizacion{
+	margin: 10px;
+}
+
+#aportesCapitalizacion table td,th{
+	
+	padding: 6px;
+	border: 1px solid black;
+}
+
+#aportesCapitalizacion table input{
+	background: rgb(255,255,255,.6);
+	display: block;
+}
+
+
+
+
+
+
+
+/* ESTA ES LA TABLA DEL FORMULARIO  */
+
+/*Estilos del formulario  */ 
