@@ -51,251 +51,281 @@
 		<p data-target="#aportesAutonomos" class="moverDerecha">Aportes Autónomos</p>
 		<p data-target="#notasYcomentarios" class="moverDerecha">Notas y comentarios</p>
 	</div>
+	<form action="#" method="POST" enctype="multipart/form-data">
+		<div class="content">
+			<div data-content id="datosHaber" class="active">
+				<div class="contenedorFormulario">
+					<h5>formulario de remuneraciones (parte 1)</h5>
+					
+						<br>
+						<label for="nombre">Nombre</label>
+						<input type="text" id="nombre" name="nombre" /> 
+						<hr>
+						<label for="apellido">Apellido</label>
+						<input type="text" id="apellido" name="apellido"/> 
+						<hr>
+						<label for="nombreCaso"> Nombre del caso </label>
+						<input type="text" id="nombreCaso" name="nombreCaso"/> 
+						<hr>
+						<label for="numeroBeneficio"> Numero del beneficio </label>
+						<input type="text" id="numeroBeneficio" name="numeroBeneficio"/> 
+						<hr>
+						<label for="numeroExpediente"> Nombre de expendiente </label>
+						<input type="text" id="numeroExpediente" name="numeroExpediente"/> 
+						<hr>
+						<label for="prestacion"> Prestación </label>
+						<select name="prestacion" id="prestacion" placeholder="Elija una prestacion">
+							<option value="jubilacionOrdinaria">Jublicaion ordinaria (PBU PC PAP)</option>
+							<option value="pensionPorFallecimiento">Pensaion por fallecimiento del afiliado (directa)</option>
+							<option value="retiroPorInvalidez">Retiro por invalidez</option>
+							<option value="edadAvanzada">Edad avanzada</option>
+							<option value="prestacionAnticipadaPorDesempleo">Prestacion anticipada por desempleo</option>
+							<option value="rentaVitaliciaPrevisional">Renta vitalicia previsional</option>
+					
+						</select>
+						<hr> 
+						
+						<label for="tiposDeAporte"> Tipos de Aporte </label>
+						<select name="tiposDeAporte" id="tiposDeAporte">
+							<option value="relacionDeDependencia">Relación de dependencia</option>
+							<option value="autonomos">Autónomos</option>
+							<option value="mixtos">Mixtos</option>
+					
+						</select>
+						<button id="btnCargarAportes">Cargar aportes</button>
 
-	<div class="content">
+						
+						<div class="aportesRegimen" id="aportesSoloRelacionDependencia">
+							<table>
+									<tr>
+										<th><b>Aportes Régimen de Reparto</b></th>
+										<th> Hasta el 30/06/94 (PC)</th>
+										<th>Desde el 01/07/94 (PAP)</th>
+									</tr>
+									<tr>
+										<td><b>Solo Relación de Dependencia:</b></td>	
+										<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+										<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+									</tr>
+							</table>
+						</div>
 
-		<div data-content id="datosHaber" class="active">
+								
+						<div class="aportesRegimen" id="aportesSoloAutonomos">
+							<table>
+									<tr>
+										<th><b>Aportes Régimen de Reparto</b></th>
+										<th> Hasta el 30/06/94 (PC)</th>
+										<th>Desde el 01/07/94 (PAP)</th>
+									</tr>
+									<tr>
+										<td><b>Solo Autónomos:</b></td>
+										<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+										<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+									</tr>
+							</table>
+						</div>
+
+						<div class="aportesRegimen" id="aportesSimultaneos">
+							<table>
+									<tr>
+										<th><b>Aportes Régimen de Reparto</b></th>
+										<th> Hasta el 30/06/94 (PC)</th>
+										<th>Desde el 01/07/94 (PAP)</th>
+									</tr>
+									<tr>
+										<td><b>Simultáneos: </b></td>
+										<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+										<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+									</tr>
+							</table>
+						</div>
+						
+						
+
+						<div class="aportesRegimen" id="aportesCapitalizacion">
+							<table>
+								<tr>
+									<th><b>Aportes Capitalización</b></th>
+									<th><b>Aportes Capitalización</b></th>
+									<th><b>Aportes Capitalización</b></th>
+									<th><b>Aportes Capitalización</b></th>
+									<th><b>Aportes Capitalización</b></th>
+									<th><b>Aportes Capitalización</b></th>
+									
+								</tr>
+
+								<tr>
+									<td> <b>Solo Relación de Dependencia: </b></td>
+									<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+									<td><b>Solo Autónomos:</b> </td>
+									<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+									<td><b>Simultaneos: </b></td>
+									<td> <span>Años</span> <input class="inputsNumberTablaAportes" type="number"> <span>Meses</span><input class="inputsNumberTablaAportes" type="number"> <span>Dias</span><input class="inputsNumberTablaAportes" type="number"></td>
+								</tr>
+
+								
+								
+							</table>
+						</div>
 			
-			<div class="contenedorFormulario">
-				<h5>formulario de remuneraciones (parte 1)</h5>
-				<form id="formRemuneraciones1" action="#" method="POST" enctype="multipart/form-data">
-					<br>
-					<label for="nombre">Nombre</label>
-					<input type="text" id="nombre" name="nombre" /> 
-					<hr>
-					<label for="apellido">Apellido</label>
-					<input type="text" id="apellido" name="apellido"/> 
-					<hr>
-					<label for="nombreCaso"> Nombre del caso </label>
-					<input type="text" id="nombreCaso" name="nombreCaso"/> 
-					<hr>
-					<label for="numeroBeneficio"> Numero del beneficio </label>
-					<input type="text" id="numeroBeneficio" name="numeroBeneficio"/> 
-					<hr>
-					<label for="numeroExpediente"> Nombre de expendiente </label>
-					<input type="text" id="numeroExpediente" name="numeroExpediente"/> 
-					<hr>
-					<label for="prestacion"> Prestación </label>
-					<select name="prestacion" id="prestacion" placeholder="Elija una prestacion">
-						<option value="jubilacionOrdinaria">Jublicaion ordinaria (PBU PC PAP)</option>
-						<option value="pensionPorFallecimiento">Pensaion por fallecimiento del afiliado (directa)</option>
-						<option value="retiroPorInvalidez">Retiro por invalidez</option>
-						<option value="edadAvanzada">Edad avanzada</option>
-						<option value="prestacionAnticipadaPorDesempleo">Prestacion anticipada por desempleo</option>
-						<option value="rentaVitaliciaPrevisional">Renta vitalicia previsional</option>
-				
-					</select>
-					<hr> 
+
+						<hr> 
 					
-					<label for="tiposDeAporte"> Tipos de Aporte </label>
-					<select name="tiposDeAporte" id="tiposDeAporte">
-						<option value="relacionDeDependencia">Relación de dependencia</option>
-						<option value="autonomos">Autónomos</option>
-						<option value="mixtos">Mixtos</option>
-				
-					</select>
-					<hr> 
-				
-					<label for="fechaAdquisicionDerechos"> Fecha de adquisición de derechos </label>
-					<input type="date" id="fechaAdquisicionDerechos" name="fechaAdquisicionDerechos"/> 
-					<hr>
-					<label for="fechaCese"> Fecha de Cese </label>
-					<input type="date" id="fechaCese" name="fechaCese"/> 
-					<hr>
-					<label for="fechaSolicitudAnses"> Fecha de solicitud en A.N.S.E.S </label>
-					<input type="date" id="fechaSolicitudAnses" name="fechaSolicitudAnses"/>  
-					<hr>
-					<div>
+						<label for="fechaAdquisicionDerechos"> Fecha de adquisición de derechos </label>
+						<input type="date" id="fechaAdquisicionDerechos" name="fechaAdquisicionDerechos"/> 
+						<hr>
+						<label for="fechaCese"> Fecha de Cese </label>
+						<input type="date" id="fechaCese" name="fechaCese"/> 
+						<hr>
+						<label for="fechaSolicitudAnses"> Fecha de solicitud en A.N.S.E.S </label>
+						<input type="date" id="fechaSolicitudAnses" name="fechaSolicitudAnses"/>  
+						<hr>
+						<div>
 
-						<span>¿Es pensión derivado?</span>
-						<input type="radio" class="radiobuton" id="pensionDerivadoSI" name="pensionDerivado" value="si"
-								checked>
-						<label for="pensionDerivadoSI">Si</label>
-					 
-						<input type="radio" class="radiobuton" id="pensionDerivadoNO" name="pensionDerivado" value="no">
-						<label for="pensionDerivadoNO">No</label>
-				
-					 </div>
-					 <hr>
-					<div id="aportesRegimenReparto">
-						<table>
-
-							<tr>
-							  <th><b>Aportes Régimen de Reparto</b></th>
-							  <th> Hasta el 30/06/94 (PC)</th>
-							  <th>Desde el 01/07/94 (PAP)</th>
-							</tr>
-
-							<tr>
-							  <td>Solo Relación de Dependencia:</td>	
-							  <td> <span>Años</span> <input type="number"> <span>Meses</span><input type="number"> <span>Dias</span><input type="number"></td>
-							  <td> <span>Años</span> <input type="number"> <span>Meses</span><input type="number"> <span>Dias</span><input type="number"></td>
-
-
-							</tr>
-
-							<tr>
-							  <td>Solo Autónomos:</td>
-							  <td> <span>Años</span> <input type="number"> <span>Meses</span><input type="number"> <span>Dias</span><input type="number"></td>
-							  <td> <span>Años</span> <input type="number"> <span>Meses</span><input type="number"> <span>Dias</span><input type="number"></td>
-							</tr>
-
-							<tr>
-								<td>Simultáneos:</td>
-								<td> <span>Años</span> <input type="number"> <span>Meses</span><input type="number"> <span>Dias</span><input type="number"></td>
-							  <td> <span>Años</span> <input type="number"> <span>Meses</span><input type="number"> <span>Dias</span><input type="number"></td>
-							</tr>
-				
-					</div>
+							<span>¿Es pensión derivado?</span>
+							<input type="radio" class="radiobuton" id="pensionDerivadoSI" name="pensionDerivado" value="si"
+									checked>
+							<label for="pensionDerivadoSI">Si</label>
+						
+							<input type="radio" class="radiobuton" id="pensionDerivadoNO" name="pensionDerivado" value="no">
+							<label for="pensionDerivadoNO">No</label>
 					
-
-					<div id="aportesCapitalizacion">
-						<table>
-							<tr>
-							  <th><b>Aportes Capitalización</b></th>
-							  <th> Aportes Capitalización</th>
-							  
-							</tr>
-							<tr>
-							  <td>Solo Relación de Dependencia:</td>
-							  <td> <span>Años</span> <input type="number"> <span>Meses</span><input type="number"> <span>Dias</span><input type="number"></td>
-							  
-							</tr>
-							<tr>
-							  <td>Solo Autónomos:</td>
-							  <td> <span>Años</span> <input type="number"> <span>Meses</span><input type="number"> <span>Dias</span><input type="number"></td>
-							</tr>
+						</div>
+						<hr>
+						
 							
-						  </table>
-					</div>
-		
 
-				</form>
-				
-			</div>
-		</div>
 
-		<div data-content id="masDatosHaber">
-			
-			<div class="contenedorFormulario">
-				<form id="formRemuneraciones2" action="#" method="post" enctype="multipart/form-data">
-					<h5>formulario de remuneraciones (parte 2)</h5>
-					<div>
-						<span>Ferroviario Dec.406/89</span>
-						<input type="radio" id="ferroviarioDec406SI" name="ferroviarioDec406" value="no">
-						<label for="ferroviarioDec406SI">Si</label>
-						<input type="radio" id="ferroviarioDec406NO" name="ferroviarioDec406" value="no">
-						<label for="ferroviarioDec406NO">No</label>
-					</div>
-				
-					<hr>
-					<div>
-						<span>Ferroviario Maquinista Dec. 662/812</span>
-				
-						<input type="radio" id="ferroviarioMaquinistaDecSI" name="ferroviarioMaquinistaDec" value="si">
-						<label for="ferroviarioMaquinistaDecSI">Si</label>
-						
-						<input type="radio" id="ferroviarioMaquinistaDecNO" name="ferroviarioMaquinistaDec" value="no">
-						<label for="ferroviarioMaquinistaDecNO">No</label>
-					</div>
-				
-					<hr>
-					<label for="fechaAlta"> Fecha de alta (dd/mm/año) </label>
-					<input type="date" id="fechaAlta" name="fechaAlta"/>
-					<hr>
-					<div>
-						<span>¿Aplica resolución 298?</span>
-				
-						<input type="radio" id="aplicaRes298SI" name="aplicaRes298" value="si">
-						<label for="aplicaRes298SI">Si</label>
-						
-						<input type="radio" id="aplicaRes298NO" name="aplicaRes298" value="no">
-						<label for="aplicaRes298NO">No</label>
-				
-					</div>
-					<hr>
-					<label for="fechaFinalizacionBeneficio"> Fecha de finalización del beneficio </label>
-					<input type="date" id="fechaFinalizacionBeneficio" name="fechaFinalizacionBeneficio"/>
-					<hr>
-					<div>
-						<span>¿Bonificación por zona austral?</span>
-				
-						<input type="radio" id="bonificacionZonaAustralSI" name="bonificacionZonaAustral" value="si">
-						<label for="bonificacionZonaAustralSI">Si</label>
-						
-						<input type="radio" id="bonificacionZonaAustralNO" name="bonificacionZonaAustral" value="no">
-						<label for="bonificacionZonaAustralNO">No</label>
-				
-					</div>
-					<hr>
-					<label for="porcentajeReciprocidad"> Porcentaje de reciprocidad</label>
-					<input type="number" min="0" max="100"id="porcentajeReciprocidad" name="porcentajeReciprocidad" placeholder="%"/>
-					<hr>
-					<div>
-						<span>¿Aplica el tape por aporte simultaneo entre restos de autónomos y remuneraciones?</span>
-				
-						<input type="radio" id="tapeAporteSimultaneoSI" name="tapeAporteSimultaneo" value="si">
-						<label for="tapeAporteSimultaneoSI">Si</label>
-						
-						<input type="radio" id="tapeAporteSimultaneoNO" name="tapeAporteSimultaneo" value="no">
-						<label for="tapeAporteSimultaneoNO">No</label>
-				
-					</div>
-					<hr>
-					<label for="descuentoObraSocial"> Descuento obra social </label>
-					<select name="descuentoObraSocial" id="descuentoObraSocial">
-						<option value="pami">INSSSyP (Pami)</option>
-					</select>
-					<hr>
-					<div>
-						<span>¿Aplica el minimo del 82% del SMVyM?</span>
-				
-						<input type="radio" id="aplicaelSMVyMSI" name="aplicaelSMVyM" value="si">
-						<label for="aplicaelSMVyMSI">Si</label>
-						
-						<input type="radio" id="aplicaelSMVyMNO" name="aplicaelSMVyM" value="no">
-						<label for="aplicaelSMVyMNO">No</label>
-				
-					</div>
-					<hr>
-					<div>
-						<span>¿Calcula el Ampo a la fecha de solicitud?</span>
-				
-						<input type="radio" id="ampoFechaSolicitudSI" name="ampoFechaSolicitud" value="si">
-						<label for="ampoFechaSolicitudSI">Si</label>
-						
-						<input type="radio" id="ampoFechaSolicitudNO" name="ampoFechaSolicitud" value="no">
-						<label for="ampoFechaSolicitudNO">No</label>
-				
-					</div>
-					<hr>
-				
-					<div>
-						<span>¿Para calcular el promedio, utiliza las remuneraciones ingresadas en vez de las ultimas 120?</span>
-				
-						<input type="radio" id="remuneracionesIngresadasOultimas120SI" name="remuneracionesIngresadasOultimas120" value="si">
-						<label for="remuneracionesIngresadasOultimas120SI">Si</label>
-						
-						<input type="radio" id="remuneracionesIngresadasOultimas120NO" name="remuneracionesIngresadasOultimas120" value="no">
-						<label for="remuneracionesIngresadasOultimas120NO">No</label>
-				
-					</div>
-					<hr>
-					<div>
-						<span>¿Haber minimo garantizado?</span>
-				
-						<input type="radio" id="haberMinimoGarantizadoSI" name="haberMinimoGarantizado" value="si">
-						<label for="haberMinimoGarantizadoSI">Si</label>
-						
-						<input type="radio" id="haberMinimoGarantizadoNO" name="haberMinimoGarantizado" value="no">
-						<label for="haberMinimoGarantizadoNO">No</label>
-				
-					</div>
-				</form>
+					
+					
+				</div>
 			</div>
 
-			
-		</div>
+			<div data-content id="masDatosHaber">
+				
+				<div class="contenedorFormulario">
+					
+						<h5>formulario de remuneraciones (parte 2)</h5>
+						<div>
+							<span>Ferroviario Dec.406/89</span>
+							<input type="radio" id="ferroviarioDec406SI" name="ferroviarioDec406" value="no">
+							<label for="ferroviarioDec406SI">Si</label>
+							<input type="radio" id="ferroviarioDec406NO" name="ferroviarioDec406" value="no">
+							<label for="ferroviarioDec406NO">No</label>
+						</div>
+					
+						<hr>
+						<div>
+							<span>Ferroviario Maquinista Dec. 662/812</span>
+					
+							<input type="radio" id="ferroviarioMaquinistaDecSI" name="ferroviarioMaquinistaDec" value="si">
+							<label for="ferroviarioMaquinistaDecSI">Si</label>
+							
+							<input type="radio" id="ferroviarioMaquinistaDecNO" name="ferroviarioMaquinistaDec" value="no">
+							<label for="ferroviarioMaquinistaDecNO">No</label>
+						</div>
+					
+						<hr>
+						<label for="fechaAlta"> Fecha de alta (dd/mm/año) </label>
+						<input type="date" id="fechaAlta" name="fechaAlta"/>
+						<hr>
+						<div>
+							<span>¿Aplica resolución 298?</span>
+					
+							<input type="radio" id="aplicaRes298SI" name="aplicaRes298" value="si">
+							<label for="aplicaRes298SI">Si</label>
+							
+							<input type="radio" id="aplicaRes298NO" name="aplicaRes298" value="no">
+							<label for="aplicaRes298NO">No</label>
+					
+						</div>
+						<hr>
+						<label for="fechaFinalizacionBeneficio"> Fecha de finalización del beneficio </label>
+						<input type="date" id="fechaFinalizacionBeneficio" name="fechaFinalizacionBeneficio"/>
+						<hr>
+						<div>
+							<span>¿Bonificación por zona austral?</span>
+					
+							<input type="radio" id="bonificacionZonaAustralSI" name="bonificacionZonaAustral" value="si">
+							<label for="bonificacionZonaAustralSI">Si</label>
+							
+							<input type="radio" id="bonificacionZonaAustralNO" name="bonificacionZonaAustral" value="no">
+							<label for="bonificacionZonaAustralNO">No</label>
+					
+						</div>
+						<hr>
+						<label for="porcentajeReciprocidad"> Porcentaje de reciprocidad</label>
+						<input type="number" min="0" max="100"id="porcentajeReciprocidad" name="porcentajeReciprocidad" placeholder="%"/>
+						<hr>
+						<div>
+							<span>¿Aplica el tape por aporte simultaneo entre restos de autónomos y remuneraciones?</span>
+					
+							<input type="radio" id="tapeAporteSimultaneoSI" name="tapeAporteSimultaneo" value="si">
+							<label for="tapeAporteSimultaneoSI">Si</label>
+							
+							<input type="radio" id="tapeAporteSimultaneoNO" name="tapeAporteSimultaneo" value="no">
+							<label for="tapeAporteSimultaneoNO">No</label>
+					
+						</div>
+						<hr>
+						<label for="descuentoObraSocial"> Descuento obra social </label>
+						<select name="descuentoObraSocial" id="descuentoObraSocial">
+							<option value="pami">INSSSyP (Pami)</option>
+						</select>
+						<hr>
+						<div>
+							<span>¿Aplica el minimo del 82% del SMVyM?</span>
+					
+							<input type="radio" id="aplicaelSMVyMSI" name="aplicaelSMVyM" value="si">
+							<label for="aplicaelSMVyMSI">Si</label>
+							
+							<input type="radio" id="aplicaelSMVyMNO" name="aplicaelSMVyM" value="no">
+							<label for="aplicaelSMVyMNO">No</label>
+					
+						</div>
+						<hr>
+						<div>
+							<span>¿Calcula el Ampo a la fecha de solicitud?</span>
+					
+							<input type="radio" id="ampoFechaSolicitudSI" name="ampoFechaSolicitud" value="si">
+							<label for="ampoFechaSolicitudSI">Si</label>
+							
+							<input type="radio" id="ampoFechaSolicitudNO" name="ampoFechaSolicitud" value="no">
+							<label for="ampoFechaSolicitudNO">No</label>
+					
+						</div>
+						<hr>
+					
+						<div>
+							<span>¿Para calcular el promedio, utiliza las remuneraciones ingresadas en vez de las ultimas 120?</span>
+					
+							<input type="radio" id="remuneracionesIngresadasOultimas120SI" name="remuneracionesIngresadasOultimas120" value="si">
+							<label for="remuneracionesIngresadasOultimas120SI">Si</label>
+							
+							<input type="radio" id="remuneracionesIngresadasOultimas120NO" name="remuneracionesIngresadasOultimas120" value="no">
+							<label for="remuneracionesIngresadasOultimas120NO">No</label>
+					
+						</div>
+						<hr>
+						<div>
+							<span>¿Haber minimo garantizado?</span>
+					
+							<input type="radio" id="haberMinimoGarantizadoSI" name="haberMinimoGarantizado" value="si">
+							<label for="haberMinimoGarantizadoSI">Si</label>
+							
+							<input type="radio" id="haberMinimoGarantizadoNO" name="haberMinimoGarantizado" value="no">
+							<label for="haberMinimoGarantizadoNO">No</label>
+					
+						</div>
+					
+					
+				</div>
+
+				
+			</div>
+	</form>	
+
 
 		<div data-content id="remuneraciones">      <!--Esta es la pestaña de remuneraciones-->
 			<div id="iconosRemuneraciones">
@@ -409,6 +439,7 @@
 
 
 		</div>   <!--Fin pestaña de remuneraciones-->
+	
 
 		<div data-content id="aportesAutonomos">
 			<h1>aportes autonomos</h1>
@@ -420,8 +451,10 @@
 		
 		
 
-	</div>
+	
 
+		
+	
 
 
 	<!-- JavaScript Bundle with Popper -->

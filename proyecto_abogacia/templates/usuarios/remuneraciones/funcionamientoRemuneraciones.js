@@ -16,11 +16,80 @@ targets.forEach(target => {
 	});
 });
 
-//Este es el funcionamiento del menu por pestañas ("Datos para el haber - Mas datos para el haber, etc").
+//Fin del funcionamiento del menu por pestañas ("Datos para el haber - Mas datos para el haber, etc").
 
 
 
 
+
+
+// Muestra los aportes de "tipos de aporte del formulario"
+let btnCargarAportes = document.getElementById("btnCargarAportes");
+
+btnCargarAportes.addEventListener('click', () => {
+
+	let aportesSoloAutonomos = document.getElementById("aportesSoloAutonomos");
+	let  aportesSoloRelacionDependencia = document.getElementById("aportesSoloRelacionDependencia");
+	let  aportesSimultaneos = document.getElementById("aportesSimultaneos");
+	let aportesCapitalizacion = document.getElementById("aportesCapitalizacion");
+
+	let tiposDeAporte = document.getElementById("tiposDeAporte").value;
+
+	
+	
+	if (tiposDeAporte=="relacionDeDependencia"){
+			aportesSoloRelacionDependencia.style="display:block";
+			aportesCapitalizacion.style="display:block;"
+			aportesSoloAutonomos.style="display:none";
+			aportesSimultaneos.style="display:none";
+		}
+	else if (tiposDeAporte=="autonomos") {
+				aportesSoloAutonomos.style="display:block";
+				aportesCapitalizacion.style="display:block;"
+				aportesSoloRelacionDependencia.style="display:none";
+				aportesSimultaneos.style="display:none";
+	}
+	else if (tiposDeAporte=="mixtos") {
+		aportesSoloRelacionDependencia.style="display:block";
+		aportesSoloAutonomos.style="display:block";
+		aportesSimultaneos.style="display:block";
+		aportesCapitalizacion.style="display:block;"
+	}
+
+
+});
+
+
+
+
+// Fin de los aportes de "tipos de aporte del formulario"
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Esta es la funcionalidad del boton "+" en la pestaña de remuneraciones.
 const botonSumarFechas = document.getElementById("botonSumarFechas");
 
 
@@ -105,6 +174,6 @@ botonSumarFechas.addEventListener('click', (e) =>{
 	divCol8.appendChild(p8)
 
 	
-
-   
     });
+	//Fin de la funcionalidad del boton "+" en la pestaña de remuneraciones.
+
